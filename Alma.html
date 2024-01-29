@@ -1,0 +1,2842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Alma</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .section-1 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .int {
+            height: 8vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-color: rgb(38, 38, 38);
+            display: flex;
+            justify-content: space-between;
+            /* position: static; */
+
+        }
+
+        .logo {
+            height: max-content;
+            width: 15%;
+            margin-top: 2vh;
+            margin-left: 5vh;
+        }
+
+        .i-l {
+            height: 100%;
+            width: 100%;
+        }
+
+        .buy {
+            height: 6vh;
+            width: 100px;
+            border-radius: 5px;
+            background-color: rgb(130, 180, 64);
+            border: 1px solid rgb(130, 180, 64);
+            color: white;
+            margin-right: 10vh;
+            margin-top: 5px;
+        }
+
+        .parent-1 {
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            /* display: flex; */
+            position: relative;
+        }
+
+        .pic {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content {
+            height: 100vh;
+            width: 100%;
+            background-color: #00000080;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .alma {
+            height: max-content;
+            width: 8%;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 5vh;
+            top: 20px;
+        }
+
+        .arrow {
+            font-size: 30px;
+            color: white;
+        }
+
+        .text {
+            color: white;
+            font-size: 25px;
+            letter-spacing: 5px;
+            margin-left: 30px;
+            margin-top: -31px;
+        }
+
+        .ule {
+            height: max-content;
+            width: max-content;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 40%;
+            top: 20px;
+        }
+
+        #serch {
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            top: -100vh;
+            /* margin-top:-100vh ; */
+            transition: all 0.4s linear;
+        }
+
+        .bb {
+            top: 0 !important;
+        }
+
+
+        .cros {
+            height: 60px;
+            width: 60px;
+            border: 1px solid white;
+            margin-left: 90%;
+        }
+
+        .mark {
+            font-size: 30px;
+            color: white;
+            margin-left: 15px;
+        }
+
+        .srch {
+            height: 20vh;
+            width: 90%;
+            border-bottom: 1px solid white;
+            background-color: black;
+            margin-top: 20vh;
+        }
+
+        #ph3 {
+            font-size: 50px;
+            color: white;
+            border: 1px solid red;
+            padding-left: 8px;
+        }
+
+        .s-bar {
+            height: 100%;
+            width: 30%;
+            padding: 1px;
+            background-color: rgb(23, 23, 23);
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+
+        .fff {
+            left: 70%;
+        }
+
+        .mark1 {
+            font-size: 30px;
+            color: white;
+            margin-left: 80%;
+            margin-top: 10%;
+
+        }
+
+        .arow1 {
+            font-size: 80px;
+            color: white;
+            position: absolute;
+            left: 43%;
+            top: 30vh;
+        }
+
+        .al1 {
+            font-size: 80px;
+            position: absolute;
+            left: 15%;
+            top: 45vh;
+            font-weight: 300;
+            letter-spacing: 20px;
+            color: white;
+        }
+
+        .desgn {
+            font-size: 17px;
+            font-weight: 300;
+            color: rgb(86, 86, 86);
+            text-align: center;
+            position: absolute;
+            left: 0%;
+            top: 65vh;
+        }
+
+        .get {
+            font-size: 17px;
+            color: rgb(231, 169, 159);
+        }
+
+        .us {
+            color: white;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 65vh;
+        }
+
+        .fb {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: 15%;
+            top: 85vh;
+        }
+
+        .fb1 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: 30%;
+            top: 85vh;
+        }
+
+        .fb2 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: 43%;
+            top: 85vh;
+        }
+
+        .fb3 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: 57%;
+            top: 85vh;
+        }
+
+        .fb4 {
+            font-size: 30px;
+            color: white;
+            position: absolute;
+            left: 72%;
+            top: 85vh;
+        }
+
+
+
+
+
+
+
+
+
+
+        .home {
+            font-size: 15px;
+            /* line-height: ; */
+            color: rgb(176, 179, 181);
+            list-style: none;
+            margin-left: 40px;
+            display: inline;
+            vertical-align: top;
+            /* position: relative;  */
+        }
+
+        .col {
+            color: rgb(231, 169, 159);
+        }
+
+        .line {
+            height: 2px;
+            width: 50px;
+            background-color: rgb(231, 169, 159);
+            position: absolute;
+            transition: all 0.3s linear;
+            left: 8%;
+            top: 20px;
+        }
+
+        /* .home:hover .line{
+            width: 50px;
+        } */
+        .line11 {
+            height: 2px;
+            width: 0px;
+            background-color: rgb(231, 169, 159);
+            position: absolute;
+            transition: all 0.3s linear;
+            left: 25%;
+            top: 20px;
+        }
+
+        .home:hover .line11 {
+            width: 100px;
+        }
+
+        .line2 {
+            height: 2px;
+            width: 0px;
+            background-color: rgb(231, 169, 159);
+            position: absolute;
+            transition: all 0.3s linear;
+            left: 25%;
+            top: 20px;
+        }
+
+        .home:hover .line2 {
+            width: 50px;
+        }
+
+        .box {
+            height: max-content;
+            width: 10%;
+            /* border: 1px solid #000; */
+            transition: all 0.3s linear;
+            position: absolute;
+            left: 85%;
+            top: 20px;
+        }
+
+        .icons {
+            font-size: 15px;
+            color: white;
+            margin-left: 20px;
+            opacity: 0.7;
+        }
+
+        .icons:hover {
+            cursor: pointer;
+            opacity: 1;
+        }
+
+        .tex {
+            height: 10vh;
+            width: max-content;
+            /* / border: 1px solid #000; */
+            position: absolute;
+            left: 30%;
+            top: 25vh;
+        }
+
+        .we {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 8px;
+            color: rgb(176, 179, 181);
+            font-size: 400;
+        }
+
+        .sparent {
+            height: 20vh;
+            width: 62%;
+            /* overflow: hidden; */
+            /* border: 5px solid #000; */
+            position: absolute;
+            left: 21%;
+            top: 20vh;
+        }
+
+        .ph1 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 0.3s linear;
+            opacity: 0;
+        }
+
+        @keyframes ani {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+        .ph2 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+            opacity: 0;
+        }
+
+        @keyframes ani1 {
+            0% {
+                transform: translateY(-0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+
+        .ph3 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: vid;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+            opacity: 0;
+        }
+
+        @keyframes vid {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+        .ph4 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani4 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+
+        }
+
+        .ph5 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani5;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani5 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+        .ph6 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani6;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani6 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+        .ph7 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani7;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani7 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+
+        }
+
+        .ph8 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani8;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani8 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+        .ph9 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: ani9;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes ani9 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+
+        }
+
+
+        .ph10 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: animee10;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes animee10 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+        .ph11 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: animee11;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes animee11 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+
+        .ph12 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: animee12;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes animee12 {
+            0% {
+                transform: translateY(0px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(100px);
+                opacity: 1;
+            }
+        }
+
+
+        .child1 {
+            height: max-content;
+            width: 62%;
+            overflow: hidden;
+            /* border: 5px solid #000; */
+            position: absolute;
+            left: 21%;
+            top: 35vh;
+        }
+
+
+        .pho1 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: anim1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim1 {
+            0% {
+                transform: translateY(0px);
+            }
+
+            100% {
+
+                transform: translateY(-100px);
+            }
+        }
+
+        .pho2 {
+            letter-spacing: 30px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+
+            animation-name: anim2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim2 {
+            0% {
+                transform: translateY(0px);
+                /* opacity: ; */
+            }
+
+            100% {
+
+                transform: translateY(-100px);
+                /* opacity: ; */
+            }
+        }
+
+
+
+        .pho3 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: anim3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim3 {
+            0% {
+                transform: translateY(0px);
+                /* opacity: 1; */
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+        }
+
+        .pho4 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            font-family: 300;
+            display: inline-block;
+            animation-name: anim4;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim4 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho5 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim5;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim5 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho6 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anime6;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anime6 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho7 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim7;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim7 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho8 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            animation-name: anim8;
+            display: inline-block;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim8 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho9 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim9;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim9 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+        .pho10 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim10;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim10 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+
+        .pho11 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim11;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+        }
+
+        @keyframes anim11 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+
+        .pho12 {
+            letter-spacing: 10px;
+            font-size: 70px;
+            color: rgb(231, 169, 159);
+            display: inline-block;
+            animation-name: anim12;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            transition: all 3s linear;
+
+        }
+
+        @keyframes anim12 {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateY(-100px);
+                opacity: 1;
+            }
+        }
+
+
+
+
+
+
+        .scroll {
+            color: rgb(176, 179, 181);
+            font-size: 13px;
+            position: absolute;
+            left: 46%;
+            top: 55vh;
+        }
+
+        .arw {
+            height: 23vh;
+            width: 2%;
+            /* border: 2px solid #000; */
+            position: absolute;
+            left: 50%;
+            top: 57vh;
+        }
+
+        .ver {
+            height: 20vh;
+            width: 1%;
+            background-color: rgb(176, 179, 181);
+            margin: auto;
+            animation: ver linear 1s infinite;
+        }
+
+        @keyframes ver {
+            0% {
+                margin-top: 0vh;
+            }
+
+            50% {
+                margin-top: 3vh;
+            }
+
+            60% {
+                margin-top: 7vh;
+            }
+
+            100% {
+                margin-top: 10vh;
+            }
+        }
+
+
+        .more {
+            height: 7vh;
+            width: 13%;
+            border: 1px solid rgb(176, 179, 181);
+            background-color: transparent;
+            color: white;
+            letter-spacing: 2px;
+            position: absolute;
+            left: 37%;
+            /* font-size: 17px; */
+            top: 88vh;
+            transition: all 0.2s linear;
+        }
+
+        .more:hover {
+            background-color: white;
+            color: rgb(231, 169, 159);
+            cursor: pointer;
+        }
+
+        .more1 {
+            height: 7vh;
+            width: 13%;
+            border: 1px solid rgb(176, 179, 181);
+            background-color: transparent;
+            color: white;
+            letter-spacing: 2px;
+            position: absolute;
+            left: 52%;
+            /* font-size: 17px; */
+            top: 88vh;
+            transition: all 0.2s linear;
+        }
+
+        .more1:hover {
+            color: white;
+            background-color: rgb(231, 169, 159);
+            cursor: pointer;
+        }
+
+        .section-2 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+        }
+
+        .parent2 {
+            height: 40vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            margin-top: 20vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .ch1 {
+            height: 100%;
+            width: 30%;
+            /* /   border: 1px solid #000; */
+
+        }
+
+        .ch2 {
+            height: 100%;
+            width: 28%;
+            /* border: 1px solid #000; */
+
+        }
+
+        .ch3 {
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid #000; */
+        }
+
+        .num {
+            font-size: 45px;
+            color: rgb(231, 169, 159);
+            text-align: center;
+        }
+
+        .ino {
+            font-size: 30px;
+            text-align: center;
+            margin-top: 20px;
+            letter-spacing: 5px;
+        }
+
+        .brand {
+            font-size: 17px;
+            text-align: center;
+            color: gray;
+            margin-top: 30px;
+        }
+
+        .parent3 {
+            height: 70vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-color: rgb(249, 235, 232);
+        }
+
+        .do {
+            font-size: 18px;
+            color: rgb(234, 178, 169);
+            text-align: center;
+            letter-spacing: 5px;
+            margin-top: 20vh;
+        }
+
+        .text1 {
+            height: 10vh;
+            width: 40%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            letter-spacing: 5px;
+        }
+
+        .app {
+            color: black;
+            font-size: 50px;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 6px;
+            opacity: 0;
+        }
+
+        .t1 {
+            animation: t1 8s linear infinite;
+        }
+
+        @keyframes t1 {
+            0% {
+                margin-top: -8px;
+                opacity: 1;
+            }
+
+            25% {
+                margin-top: -8px;
+                opacity: 1;
+            }
+
+            26% {
+                margin-top: -8px;
+                opacity: 0;
+
+            }
+
+            100% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+        }
+
+        .t2 {
+            animation: t2 8s linear infinite;
+        }
+
+        @keyframes t2 {
+            0% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            25% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            26% {
+                margin-top: -45px;
+                opacity: 1;
+
+            }
+
+            50% {
+                margin-top: -45px;
+                opacity: 1;
+            }
+
+            51% {
+                margin-top: -45px;
+                opacity: 0;
+
+            }
+
+            100% {
+                margin-top: -45px;
+                opacity: 0;
+
+            }
+        }
+
+        .t3 {
+            animation: t3 8s linear infinite;
+        }
+
+        @keyframes t3 {
+            0% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            25% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            26% {
+                margin-top: -45px;
+                opacity: 0;
+
+            }
+
+            50% {
+                margin-top: -45px;
+                opacity: 0;
+            }
+
+            51% {
+                margin-top: -65px;
+                opacity: 1;
+            }
+
+            75% {
+                margin-top: -65px;
+                opacity: 0;
+            }
+
+            100% {
+                margin-top: -65px;
+                opacity: 0;
+            }
+
+
+        }
+
+        /* qw */
+        .t4 {
+            animation: t4 8s linear infinite;
+        }
+
+        @keyframes t4 {
+            0% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            25% {
+                margin-top: -8px;
+                opacity: 0;
+            }
+
+            26% {
+                margin-top: -45px;
+                opacity: 0;
+
+            }
+
+            50% {
+                margin-top: -45px;
+                opacity: 0;
+            }
+
+            51% {
+                margin-top: -65px;
+                opacity: 0;
+            }
+
+            75% {
+                margin-top: -65px;
+                opacity: 0;
+            }
+
+            76% {
+                margin-top: -60px;
+                opacity: 1;
+            }
+
+            100% {
+                margin-top: -60px;
+                opacity: 0;
+            }
+
+
+        }
+
+
+
+        .gb {
+            height: max-content;
+            width: 90%;
+            /* border: 5px solid #000; */
+            margin: auto;
+            margin-top: -20vh;
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: 280px 280px;
+
+        }
+
+        .con {
+            /* height: 25%;
+            width: 25%; */
+            /* background-color: red; */
+            /* border: 1px solid red; */
+            transition: all .3s linear;
+            overflow: hidden;
+        }
+
+        .con:hover {
+            transform: translateY(-10px);
+        }
+
+        .b1 {
+            height: 100%;
+            width: 100%;
+            padding: 1px;
+            position: relative;
+        }
+
+        .project {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .cont {
+            height: 8vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-color: black;
+            padding: 1px;
+            position: absolute;
+            left: 0;
+            top: 45vh;
+            opacity: 0;
+            transition: all 0.2s linear;
+        }
+
+        .theme {
+            font-size: 18px;
+            text-align: center;
+            margin-top: 5px;
+            color: white;
+        }
+
+        .b1:hover .cont {
+            top: 40vh;
+            opacity: 1;
+        }
+
+
+
+
+        .section-3 {
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            margin-top: -20vh;
+            background-color: black;
+            display: flex;
+        }
+
+        .parent4 {
+            height: 90vh;
+            width: 50%;
+            /* border: 1px solid red; */
+            margin-top: 20vh;
+        }
+
+        .stuff {
+            color: rgb(232, 170, 160);
+            font-size: 17px;
+            letter-spacing: 3px;
+            margin-left: 12vh;
+            margin-top: 20vh;
+        }
+
+        .ser {
+            color: white;
+            font-size: 37px;
+            letter-spacing: 7px;
+            margin-left: 12vh;
+            margin-top: 8vh;
+        }
+
+        .dolor {
+            color: white;
+            font-size: 17px;
+            margin-left: 12vh;
+            margin-top: 10vh;
+            line-height: 35px;
+        }
+
+        .btn0 {
+            height: 45px;
+            width: 28%;
+            border: 1px solid rgb(232, 170, 160);
+            background-color: rgb(232, 170, 160);
+            color: white;
+            font-size: 14px;
+            letter-spacing: 3px;
+            margin-left: 12%;
+            margin-top: 10px;
+            transition: all 0.3s linear;
+        }
+
+        .btn0:hover {
+            transform: translateY(-3px);
+            cursor: pointer;
+        }
+
+        .parent5 {
+            height: 90vh;
+            width: 50%;
+            /* border: 1px solid red; */
+            margin-top: 20vh;
+        }
+
+        .mcircle {
+            height: 75vh;
+            width: 75%;
+            border: 1px solid white;
+            border-radius: 50%;
+            margin: auto;
+            margin-top: 10vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ccir1 {
+            height: 70px;
+            width: 70px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            position: absolute;
+            top: -6vh;
+            left: 44%;
+        }
+
+        .c1 {
+            background-color: rgb(234, 150, 137);
+        }
+
+        .ccir2 {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 12vh;
+            left: 86%;
+        }
+
+        .ccir3 {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 50vh;
+            left: 88%;
+        }
+
+        .ccir4 {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 68vh;
+            left: 45%;
+        }
+
+        .ccir5 {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 48vh;
+            left: -1%;
+        }
+
+        .ccir6 {
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 11vh;
+            left: 3%;
+        }
+
+        .heart {
+            font-size: 40px;
+            margin-top: 13px;
+            margin-left: 13px;
+            color: gray;
+        }
+
+        .heart1 {
+            font-size: 30px;
+            margin-top: 16px;
+            margin-left: 16px;
+            color: rgb(152, 150, 151);
+        }
+
+        .mc1 {
+            height: 330px;
+            width: 330px;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin-top: 10vh;
+            background-color: white;
+            position: relative;
+        }
+
+        .tcc {
+            height: 330px;
+            width: 330px;
+            border-radius: 50%;
+            /* border: 5px solid red; */
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+
+        .tc1 {
+            opacity: 1;
+            transition: all 2s linear;
+        }
+
+        .hg {
+            background-color: rgb(234, 150, 137);
+        }
+
+        .gd {
+            font-size: 25px;
+            font-weight: 300;
+            color: black;
+            margin-top: 20vh;
+            text-align: center;
+            letter-spacing: 3px;
+        }
+
+        .sm {
+            transition: all .5s linear;
+        }
+
+        .lt {
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+
+        .section-4 {
+            height: 100vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-image: url(./113.jpg);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .cont3 {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.422);
+            padding: 1px;
+        }
+
+        .them {
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            color: rgb(232, 172, 163);
+            margin-top: 10vh;
+        }
+
+        .oc {
+            font-size: 60px;
+            letter-spacing: 10px;
+            text-align: center;
+            color: black;
+            margin-top: 5vh;
+            font-family: 400;
+        }
+
+        .logic {
+            height: max-content;
+            width: 50%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            margin-top: 10vh;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .face {
+            height: 10vh;
+            width: 10%;
+            /* border: 1px solid #000; */
+            border-radius: 50%;
+        }
+
+        .fi {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            transition: all 1s linear;
+        }
+
+        .fe {
+            opacity: 0.8;
+            transition: all 1s linear;
+        }
+
+        .tlogic {
+            height: 15vh;
+            width: 55%;
+            /* border: 5px solid #000; */
+            position: absolute;
+            left: 23%;
+            top: 55vh;
+        }
+
+        .intg {
+            font-size: 17px;
+            position: absolute;
+            left: 0;
+            top: 22px;
+            opacity: 0;
+        }
+
+        .ig {
+            opacity: 1;
+            transition: all 1s linear;
+        }
+
+        .section-5 {
+            height: 140vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            padding-bottom: 10vh;
+        }
+
+        .parent6 {
+            height: 30vh;
+            width: 80%;
+            /* border: 1px solid #000; */
+            margin-top: 10vh;
+            margin-left: 10vh;
+            display: flex;
+        }
+
+        .block {
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid #000; */
+        }
+        .java{
+         transition: all 1s linear; 
+            opacity: 0.9;
+        }
+
+        .no {
+            font-size: 20px;
+            letter-spacing: 3px;
+            color:  gray;
+            /* color:  rgb(232, 172, 163); */
+            margin-top: 3vh;
+            margin-left: 2vh;
+        }
+
+        .lin {
+            height: 2px;
+            width: 85%;
+            background-color: gray;
+            margin-top: 3vh;
+            margin-left: 2vh;
+        }
+
+        .vial {
+            font-size: 27px;
+             color:  gray; 
+            margin-top: 3vh;
+            margin-left: 2vh;
+        }
+
+        .who {
+            font-size: 23px;
+            /* color: rgb(232, 172, 163); */
+            letter-spacing: 4px;
+            margin-left: 9vh;
+            color: gray;
+            margin-top: -4.5vh;
+        }
+
+        .chng {
+            color: rgb(95, 95, 95);
+        }
+
+        .chngc {
+            background-color: rgb(95, 95, 95);
+        }
+
+        .pp-dvsn {
+            height: 100vh;
+            width: 100%;
+            /* border: 5px solid red; */
+            position: relative;
+
+        }
+
+        .slidr {
+            height: 80vh;
+            width: 100%;
+            /* border: 5px solid #000; */
+            margin-top: 5vh;
+            display: flex;      
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        
+       
+        .scrpt{
+            opacity: 1;   
+            transition: all 1s linear;         
+        }
+        .display-n{
+            height: 80vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            margin-top: 5vh;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;            
+        }
+        .to1 {
+            font-size: 50px;
+            font-weight: 300;
+            margin-left: 5vh;
+            letter-spacing: 10px;
+            color: rgb(232, 172, 163);
+        }
+        .sint {
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: 300;
+            margin-left: 5vh;
+            color: gray;
+        }
+
+        .alovera {
+            height: 45vh;
+            width: 80%;
+            /* border: 1px solid #000; */
+            margin-left: 5vh;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15vh;
+            }
+
+        .alo {
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid #000; */
+        }
+
+        .boys {
+            height: 100%;
+            width: 100%;
+        }
+
+       .dis2{
+        height: 100%;
+        width: 50%;
+        /* border: 1px solid #000; */
+    }
+
+        .to2 {
+            font-size: 50px;
+            font-weight: 300;
+            margin-left: 5vh;
+            letter-spacing: 10px;
+            color: rgb(232, 172, 163);
+            margin-top: 10vh;
+        }
+
+        .occt1 {
+            font-size: 18px;
+            font-weight: 300;
+            margin-top: 5vh;
+            margin-left: 5vh;
+            line-height: 30px;
+            color: gray;
+        }
+
+        .sorry {
+            height: 60vh;
+            width: 40%;
+            /* border: 1px solid #000; */
+            margin-left: 20vh;
+            /* margin-top: -62vh; */
+            padding: 1px;
+            background-color: black;
+            /* position: relative; */
+        }
+
+        .sry {
+            font-size: 50px;
+            color: white;
+            letter-spacing: 4px;
+            text-align: center;
+            
+
+        }
+
+
+        .child10 {
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid #000; */
+            margin-left: 5%;
+        }
+
+        .child11 {
+            height: 100%;
+            width: 50%;
+            /* border: 1px solid #000; */
+            margin-left: 5%;
+        }
+
+        .wa {
+
+            margin-top: 5vh;
+            font-size: 50px;
+            font-weight: 300;
+            text-align: center;
+            letter-spacing: 10px;
+        }
+
+        .sit {
+            margin-top: 10vh;
+            font-size: 20px;
+            text-align: center;
+            /* letter-spacing: px; */
+        }
+
+        .site2 {
+            margin-top: 10vh;
+            font-size: 21px;
+            text-align: center;
+        }
+
+        .ppic {
+            height: 90%;
+            width: 80%;
+            /* border: 1px solid #000; */
+            margin: auto;
+        }
+
+        .ht {
+            height: 100%;
+            width: 100%;
+        }
+
+        .section-6 {
+            height: max-content;
+            width: 100%;
+            /* border: 5px solid #000; */
+        }
+
+        .tips {
+            margin-top: 10vh;
+            font-size: 20px;
+            text-align: center;
+            font-family: 400;
+            letter-spacing: 10px;
+            color: rgb(232, 172, 163);
+        }
+
+        .blog {
+            margin-top: 5vh;
+            font-size: 40px;
+            text-align: center;
+            font-family: 300;
+            letter-spacing: 13px;
+            color: black;
+        }
+
+        .parent8 {
+            height: 120vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            position: relative;
+        }
+
+        .content2 {
+            height: 100%;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.424);
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .download {
+            height: 100%;
+            width: 100%;
+        }
+
+        .child12 {
+            height: 90vh;
+            width: 80%;
+            /* border: 1px solid #000; */
+            display: flex;
+
+            justify-content: space-around;
+            position: absolute;
+            left: 10%;
+            top: 10vh;
+        }
+
+        .offx {
+            height: 100%;
+            width: 30%;
+            /* border: 1px solid #000; */
+        }
+
+        .imge {
+            height: 50vh;
+            width: 100%;
+            /* border: 1px solid #000; */
+            overflow: hidden;
+        }
+
+        .download2 {
+            height: 100%;
+            width: 100%;
+            transition: all 0.3s linear;
+            overflow: hidden;
+        }
+
+        .imge:hover .download2 {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .txdata {
+            height: 40vh;
+            width: 100%;
+            padding: 1px;
+            /* border: 1px solid red; */
+            background-color: white;
+        }
+
+        .co {
+            font-size: 23px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: black;
+            margin-left: 20px;
+            margin-top: 10px;
+            transition: all 0.2s linear;
+        }
+
+        .co:hover {
+            color: rgb(232, 172, 163);
+            cursor: pointer;
+        }
+
+        .amet {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 28px;
+            /* letter-spacing: 1px; */
+            color: rgb(146, 146, 146);
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .section-7 {
+            height: max-content;
+            width: 100%;
+            /* border: 1px solid #000; */
+            background-image: url("WhatsApp Image 2023-07-18 at 10.39.00 PM (2).jpeg");
+            background-position: center;
+            background-size: cover;
+            padding: 1px;
+            padding-bottom: 10vh;
+        }
+
+        .nl {
+            font-size: 25px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-align: center;
+            color: white;
+            margin-top: 10vh;
+        }
+
+        .cool {
+            font-size: 17px;
+            font-weight: 300;
+            /* letter-spacing: 4px; */
+            text-align: center;
+            color: white;
+            margin-top: 3vh;
+        }
+
+        .eye {
+            height: 8vh;
+            width: 55%;
+            border-radius: 50px;
+            border: 1px solid white;
+            margin-top: 5vh;
+            margin-left: 22%;
+        }
+
+        .sb {
+            height: 8vh;
+            width: 13%;
+            border-radius: 50px;
+            font-size: 17px;
+            color: white;
+            letter-spacing: 3px;
+            background-color: rgb(232, 172, 163);
+            border: 1px solid rgb(232, 172, 163);
+            margin-left: -29vh;
+        }
+
+        .parent9 {
+            height: 40vh;
+            width: 90%;
+            /* border: 1px solid red; */
+            margin: auto;
+            margin-top: 20vh;
+            display: flex;
+        }
+
+        .b9 {
+            height: 100%;
+            width: 33%;
+            /* border: 1px solid #000; */
+        }
+
+        .phone {
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            background-color: rgb(232, 172, 163);
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dot {
+            font-size: 35px;
+            color: white;
+            /* margin-left: 15px;
+            margin-top: 10px; */
+        }
+
+        .adrs {
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            margin-top: 5vh;
+        }
+
+        .po {
+            font-size: 17px;
+            color: gray;
+            text-align: center;
+            margin-top: 10vh;
+        }
+
+        .last {
+            height: 8vh;
+            width: 16%;
+            /* background-color: black; */
+            margin: auto;
+            margin-top: 5%;
+
+        }
+
+        .icns {
+            height: max-content;
+            width: 20%;
+            /* border: 1px solid #000; */
+            margin: auto;
+            margin-top: 10vh;
+            display: flex;
+        }
+
+        .twit {
+            font-size: 25px;
+            color: gray;
+            margin-left: auto;
+            transition: all 0.3s linear;
+        }
+
+        .twit:hover {
+            color: rgb(232, 172, 163);
+        }
+
+        .develp {
+            font-size: 13px;
+            color: gray;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .wi {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section-1">
+        <div class="int">
+
+            <div class="logo">
+                <img class="i-l" src="./111.svg" alt="">
+            </div>
+            <button class="buy">Buy Now</button>
+        </div>
+        <div class="parent-1">
+            <img class="pic" src="./112.jpg" alt="">
+            <div class="content"></div>
+            <div class="alma">
+                <div class="icon">
+                    <img class="wi" src="./logo-alma-light@2x.png" alt="">
+                </div>
+            </div>
+            <ul class="ule">
+                <li class="home col">HOME
+                    <div class="line"></div>
+                </li>
+                <li class="home">PORTFOLIOS
+                    <div class="line11"></div>
+
+                </li>
+                <li class="home"> ELEMENTS
+                    <div class="line2"></div>
+
+                </li>
+                <li class="home"> BLOGS
+                    <!-- <div class="line3"></div> -->
+
+                </li>
+                <li class="home"> SHOP
+                    <!-- <div clas/s="line4"></div> -->
+
+                </li>
+            </ul>
+            <div class="box">
+                <i class="fa-solid fa-store icons "></i>
+                <i class="fa-solid fa-magnifying-glass icons" onclick="add()"></i>
+                <i class="fa-solid fa-bars icons" onclick="add()"></i>
+            </div>
+
+
+            <div class="tex">
+                <h3 class="we">WE'RE DIGITAL PIONEERS</h3>
+            </div>
+
+            <div class="sparent">
+                <span class="ph1">I</span>
+                <span class="ph2">N</span>
+                <span class="ph3">V</span>
+                <span class="ph4">E</span>
+                <span class="ph5">D</span>
+                <span class="ph6">I</span>
+                <span class="ph6">O</span>
+                <span class="ph7">G</span>
+                <span class="ph8">R</span>
+                <span class="ph9">A</span>
+                <span class="ph10">P</span>
+                <span class="ph11">H</span>
+                <span class="ph12">Y</span>
+
+            </div>
+
+            <div class="child1">
+                <span class="pho1">I</span>
+                <span class="pho2">N</span>
+                <span class="pho3">P</span>
+                <span class="pho4">H</span>
+                <span class="pho5">O</span>
+                <span class="pho6">T</span>
+                <span class="pho6">O</span>
+                <span class="pho7">G</span>
+                <span class="pho8">R</span>
+                <span class="pho9">A</span>
+                <span class="pho10">P</span>
+                <span class="pho11">H</span>
+                <span class="pho12">Y</span>
+
+
+            </div>
+            <p class="scroll">SCROLL OF EXPLORE </p>
+
+            <div class="arw">
+                <div class="ver"></div>
+            </div>
+
+            <button class="more">MORE ABOUT US</button>
+            <button class="more1">PURCHASE ALMA</button>
+
+        </div>
+    </section>
+
+    <div id="serch">
+        <div class="cros">
+            <i class="fa-solid fa-xmark mark" onclick="remove()"></i>
+        </div>
+
+        <input class="srch" type="text" id="ph3" placeholder="Search">
+
+    </div>
+    <div class="s-bar">
+        <i class="fa-solid fa-xmark mark1 " onclick="remove()"></i>
+        <i class="fa-solid fa-up-down arow1" onclick="add()"></i>
+        <h1 class="al1">ALMA</h1>
+        <p class="desgn">
+            Beautiful theme with minimalist Design. It’s time to amaze your clients with a brand new website. <span
+                class="get">Get Alma today!</span></p>
+
+        <h1 class="us">Follow us on</h1>
+        <i class="fa-brands fa-facebook fb"></i>
+        <i class="fa-brands fa-tiktok fb1"></i>
+        <i class="fa-brands fa-instagram fb2"></i>
+        <i class="fa-brands fa-pinterest fb3"></i>
+        <i class="fa-brands fa-internet-explorer fb4"></i>
+    </div>
+
+
+
+    <section class="section-2">
+        <div class="parent2">
+            <div class="ch1">
+                <h1 class="num"> <b>01</b></h1>
+                <p class="ino">INNOVATION</p>
+                <p class="brand">Interactively brand robust collaboration and idea-sharing rather than dynamic e-tailers
+
+                </p>
+            </div>
+            <div class="ch2">
+                <h1 class="num"> <b>02</b></h1>
+                <p class="ino">CREATIVITY</p>
+                <p class="brand">Interactively brand robust collaboration and idea-sharing rather than dynamic e-tailers
+                </p>
+
+            </div>
+            <div class="ch3">
+                <h1 class="num"> <b>03</b></h1>
+                <p class="ino">quality</p>
+                <p class="brand">Interactively brand robust collaboration and idea-sharing rather than dynamic e-tailers
+                </p>
+            </div>
+        </div>
+        <div class="parent3">
+
+            <h3 class="do">WE DO AMAZING STUFF</h3>
+
+            <div class="text1">
+
+                <h2 class="app t1">APPLICATIONS</h2>
+                <h2 class="app t2">ILLUTRATIONS</h2>
+                <h2 class="app t3">WEB DESIGN</h2>
+                <h2 class="app t4">GRAPHIC DESIGN</h2>
+
+            </div>
+
+        </div>
+        <div class="gb">
+            <div class="con b1">
+                <img class="project" src="./project4.jpg" alt="">
+                <div class="cont">
+                    <p class="theme">ALMA THEME</p>
+                </div>
+            </div>
+            <div class="con b2">
+                <div class="con b1">
+                    <img class="project" src="./project5.jpg" alt="">
+                    <div class="cont">
+                        <p class="theme">ALMA THEME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con b3">
+                <div class="con b1">
+                    <img class="project" src="./projectbig10.jpg" alt="">
+                    <div class="cont">
+                        <p class="theme">ALMA THEME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con b4">
+                <div class="con b1">
+                    <img class="project" src="./projectbig6.jpg" alt="">
+                    <div class="cont">
+                        <p class="theme">ALMA THEME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con b5">
+                <div class="con b1">
+                    <img class="project" src="./projectbig7.jpg" alt="">
+                    <div class="cont">
+                        <p class="theme">ALMA THEME</p>
+                    </div>
+                </div>
+            </div>
+            <div class="con b6">
+                <div class="con b1">
+                    <img class="project" src="./projectbig11.jpg" alt="">
+                    <div class="cont">
+                        <p class="theme">ALMA THEME</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+
+        <div class="parent4">
+            <p class="stuff"> <b> WE DO CREATIVE STUFF </b></p>
+            <h1 class="ser"> OUR SERVICES </h1>
+            <p class="dolor">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.
+            </p>
+            <button class="btn0">MORE ABOUT US</button>
+        </div>
+        <div class="parent5">
+            <div class="mcircle">
+                <div class="ccir1 sm hg ">
+                    <i class="fa-regular fa-heart heart1 "></i>
+                </div>
+                <div class="ccir2  sm ">
+                    <i class="fa-solid fa-computer heart1"></i>
+                </div>
+                <div class="ccir3  sm">
+                    <i class="fa-solid fa-code heart1"></i>
+                </div>
+                <div class="ccir4  sm">
+                    <i class="fa-solid fa-radio heart1"></i>
+                </div>
+                <div class="ccir5 sm">
+                    <i class="fa-regular fa-address-book heart1"></i>
+                </div>
+                <div class="ccir6  sm">
+                    <i class="fa-solid fa-bezier-curve heart1"></i>
+                </div>
+                <div class="mc1">
+                    <div class="tcc tc1">
+
+                        <h1 class="gd">GRAPHIC DESIGN</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+                    <div class="tcc">
+                        <h1 class="gd">WEB DESIGNING</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+                    <div class="tcc">
+                        <h1 class="gd">WEB DEVELOPMENT</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+                    <div class="tcc ">
+                        <h1 class="gd">3D MODILING</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+                    <div class="tcc ">
+                        <h1 class="gd">CONSULTING</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+                    <div class="tcc ">
+                        <h1 class="gd">ILLUSTRATION</h1>
+                        <p class="lt">
+                            Lorem ipsum is placeholder text commonly used in for previewing layouts and visual mockups
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <section class="section-4">
+        <div class="cont3">
+            <p class="them">WE LOVE THEM. THEY LOVE US.</p>
+            <h1 class="oc">OUR CLIENTS</h1>
+
+            <div class="logic">
+                <div class="face ">
+                    <img class="fi fe" src="./WhatsApp Image 2023-07-18 at 4.04.34 AM.jpeg" alt="">
+                </div>
+                <div class="face">
+                    <img class="fi" src="./WhatsApp Image 2023-07-18 at 4.04.35 AM (1).jpeg" alt="">
+                </div>
+                <div class="face">
+                    <img class="fi" src="./WhatsApp Image 2023-07-18 at 4.04.35 AM (2).jpeg" alt="">
+                </div>
+                <div class="face">
+                    <img class="fi" src="./WhatsApp Image 2023-07-18 at 4.04.35 AM (3).jpeg" alt="">
+
+                </div>
+                <div class="face">
+                    <img class="fi" src="./projectbig6.jpg" alt="">
+
+                </div>
+                <div class="face">
+                    <img class="fi" src="./WhatsApp Image 2023-07-18 at 4.04.35 AM (1).jpeg" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="tlogic">
+
+            <p class="intg ig">"Rapidiously integrate multimedia based resources whereas low-risk high-yield
+                technologies. Proactively innovate market positioning products"</p>
+            <p class="intg ">"Rapidiously integrate multimedia based resources whereas low-risk yiel innovate market
+                positioning products without B2B products resources before"</p>
+            <p class="intg ">""Compellingly fashion low-risk high-yield "outside the box" thinking after synergistic
+                users. Quickly empower web-enabled manufactured products alignments""</p>
+            <p class="intg ">"Enthusiastically syndicate inexpensive services and bandwidth phosfluorescently develop
+                cooperative content vis-a-vis best-of-breed alignments."</p>
+            <p class="intg ">"Rapidiously integrate multimedia based resources whereas low-risk high-yield technologies.
+                Proactively innovate market positioning products"</p>
+            <p class="intg ">"Rapidiously integrate multimedia based resources whereas low-risk high-yield technologies.
+                Proactively innovate market positioning products"</p>
+        </div>
+
+    </section>
+    <section class="section-5">
+        <div class="parent6">
+            <div class="block java">
+                <h2 class="no">01</h2>
+                <div class="lin"></div>
+                <i class="fa-solid fa-flask-vial vial"></i>
+                <h2 class="who">WHO WE ARE</h2>
+            </div>
+            <div class="block  ">
+                <h2 class="no chng">02</h2>
+                <div class="lin chngc "></div>
+                <i class="fa-solid fa-microscope vial chng"></i>
+                <h2 class="who chng">WHAT WE DO</h2>
+
+            </div>
+            <div class="block  ">
+                <h2 class="no chng">03</h2>
+                <div class="lin chngc "></div>
+                <i class="fa-solid fa-mountain-city vial chng"></i>
+                <h2 class="who chng">OFFICE</h2>
+
+            </div>
+            <div class="block  ">
+                <h2 class="no chng">04</h2>
+                <div class="lin chngc"></div>
+                <i class="fa-solid fa-video vial chng"></i>
+                <h2 class="who chng">Video</h2>
+
+            </div>
+
+
+
+
+        </div>
+        <div class="pp-dvsn">
+            <!-- 1 -->
+            <div class="slidr scrpt">
+                <div class="child10">
+                    <h3 class="wa">WE'RE ALMA</h3>
+                    <p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris
+                        nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p class="site2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+
+                    <button class="btn0">MORE ABOUT US</button>
+
+                </div>
+                <div class="child11">
+                    <div class="ppic">
+                        <img class="ht" src="./home-tabs1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class=" slidr">
+                <div class="child10">
+                    <h3 class="wa">DESIGN & CODE</h3>
+                    <p class="sit">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris
+                        nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <p class="site2">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt
+                        mollit anim id est laborum.</p>
+
+                    <button class="btn0">MORE ABOUT US</button>
+
+                </div>
+
+
+                <div class="child11">
+                    <div class="ppic">
+                        <img class="ht" src="./home-tabs1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class=" slidr " >
+                    <div class="child10">
+                <h1 class="to1">THE OFFICE</h1>
+
+                <p class="sint">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. <br>
+
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.
+                </p>
+                </div>
+                <div class="alovera">
+                    <div class="alo">
+                        <img class="boys" src="./113.jpg" alt="">
+                    </div>
+                    <div class="alo">
+                        <img class="boys" src="./114.jpg" alt="">
+                    </div>
+                    <div class="alo">
+                        <img class="boys" src="./112.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="slidr ">
+                <div class="dis2">
+
+                    <h1 class="to2">VIDEO & MOTION</h1>
+                    <p class="occt1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo <br> consequat. Duis aute irure dolor in reprehenderit
+                    in voluptate velit esse cillum <br> dolore eu fugiat nulla pariatur. <br>
+                    
+                    Excepteur sint occaecat cupidatat non proident, <br> sunt in culpa qui officia deserunt mollit anim
+                    id est laborum.</p> 
+                </div>
+
+                <div class="sorry">
+                    <h1 class="sry">Sorry </h1>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </section>
+    <section class="section-6">
+
+        <p class="tips">LATEST NEWS & TIPS</p>
+        <h1 class="blog">FROM THE BLOG</h1>
+        <div class="parent8">
+            <img class="download" src="./WhatsApp Image 2023-07-18 at 10.39.00 PM.jpeg" alt="">
+            <div class="content2"></div>
+            <div class="child12">
+                <div class="offx">
+                    <div class="imge">
+                        <img class="download2" src="./WhatsApp Image 2023-07-18 at 10.39.00 PM (1).jpeg" alt="">
+                    </div>
+                    <div class="txdata">
+                        <h2 class="co">Creative Office</h2>
+                        <p class="amet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit,
+                            dolore asperiores molestiae aliquam consectetur! Repudiandae, harum illo excepturi ratione
+                            numquam mollitia.</p>
+                    </div>
+                </div>
+                <div class="offx">
+                    <div class="imge">
+                        <img class="download2" src="./WhatsApp Image 2023-07-18 at 10.41.32 PM.jpeg" alt="">
+                    </div>
+                    <div class="txdata">
+                        <h2 class="co">Happy birthday thomasi</h2>
+                        <p class="amet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit,
+                            dolore asperiores molestiae aliquam consectetur! Repudiandae, harum illo excepturi ratione
+                            numquam mollitia.</p>
+                    </div>
+
+                </div>
+                <div class="offx">
+                    <div class="imge">
+                        <img class="download2" src="./WhatsApp Image 2023-07-18 at 10.39.01 PM.jpeg" alt="">
+                    </div>
+                    <div class="txdata">
+                        <h2 class="co">Relaxing the Pool</h2>
+                        <p class="amet">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus suscipit,
+                            dolore asperiores molestiae aliquam consectetur! Repudiandae, harum illo excepturi ratione
+                            numquam mollitia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-7">
+        <p class="nl">SUBSCRIBE OUR NEWSLETTER</p>
+        <p class="cool">Receive news, cool free stuff updates and new released products (no spam!)</p>
+        <input class="eye" type="text" placeholder="ENTER YOUR Email">
+        <button class="sb">Search</button>
+
+        <div class="parent9">
+            <div class="b9">
+                <div class="phone">
+                    <i class="fa-solid fa-location-dot dot"></i>
+                </div>
+                <p class="adrs">ADDRESS</p>
+                <p class="po">PO Box 16122 Collins Street West
+                    Victoria 8007 Australia</p>
+
+
+
+            </div>
+            <div class="b9">
+                <div class="phone">
+                    <i class="fa-regular fa-envelope-open dot"></i>
+                </div>
+                <p class="adrs">EMAIL</p>
+                <p class="po">PO Box 16122 Collins Street West
+                    Victoria 8007 Australia</p>
+
+            </div>
+            <div class="b9">
+                <div class="phone">
+                    <i class="fa-solid fa-phone dot"></i>
+                </div>
+                <p class="adrs">PHONE</p>
+                <p class="po">(+222) 848 333 941 (+12) 484 413 555</p>
+
+            </div>
+        </div>
+
+
+        <div class="last">
+            <img class="wi" src="./logo-alma-light@2x.png" alt="">
+
+        </div>
+
+        <div class="icns">
+
+            <i class="fa-brands fa-twitter twit"></i>
+            <i class="fa-brands fa-facebook twit"></i>
+            <i class="fa-brands fa-youtube twit"></i>
+            <i class="fa-brands fa-pinterest twit"></i>
+            <i class="fa-brands fa-tiktok twit"></i>
+        </div>
+
+        <p class="develp">ALMA 2023 BY S&A developer </p>
+    </section>
+
+
+
+    <script>
+
+        let a = document.getElementById("serch")
+
+        // console.log(a);
+
+
+        function add() {
+
+            a.classList.add("bb")
+        }
+
+
+        function remove() {
+
+            a.classList.remove("bb")
+        }
+        let b = document.getElementsByClassName("s-bar")[0]
+
+        // console.log(b);
+
+        function add() {
+            b.classList.add("fff")
+
+        }
+        function remove() {
+            b.classList.remove("fff")
+
+        }
+
+
+        let z = document.getElementsByClassName("sm")
+
+        console.log(z);
+
+        let r = document.getElementsByClassName("tcc")
+
+        console.log(r);
+
+        for (let y = 0; y < z.length; y++) {
+            z[y].addEventListener("mouseenter", function () {
+                for (let q = 0; q < z.length; q++) {
+
+                    z[q].classList.remove("hg")
+                    r[q].classList.remove("tc1")
+                }
+                z[y].classList.add("hg")
+                r[y].classList.add("tc1")
+            })
+        }
+        let w = document.querySelectorAll(".fi")
+        console.log(w);
+
+        let t = document.querySelectorAll(".intg")
+        console.log(t[1]);
+        for (let u = 0; u < w.length; u++) {
+            w[u].addEventListener("mouseenter", function () {
+
+
+                for (let v = 0; v < t.length; v++) {
+                    console.log(t[v]);
+
+                    w[v].classList.remove("fe")
+                    t[v].classList.remove("ig")
+
+                }
+                w[u].classList.add("fe")
+                t[u].classList.add("ig")
+            })
+        }
+
+        // 333333333333333333333333
+        let s = document.getElementsByClassName("block")
+        console.log(s);
+
+        let l = document.getElementsByClassName("slidr")
+        console.log(l);
+     
+        for(let i=0; i < s.length;i++ ){
+            s[i].addEventListener("click",function(){
+
+                for(let r=0;r<l.length;r++ ){
+
+                    s[r].classList.remove("java")
+                    l[r].classList.remove("scrpt")
+                }      
+                
+                console.log(s);
+                
+                    s[i].classList.add("java")
+                    l[i].classList.add("scrpt")
+            })
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
